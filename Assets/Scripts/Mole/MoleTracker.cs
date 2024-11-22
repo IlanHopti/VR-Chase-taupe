@@ -82,8 +82,8 @@ public class MoleTracker : MonoBehaviour
                     .AppendInterval(intervalBeforeNext)
                     .OnComplete(() =>
                     {
-                        if (wasHit) return; // Taupe déjà frappée
-                        if (!GameManager.Instance.isGameOver) // Si le jeu n'est pas terminé
+                        if (wasHit) return; 
+                        if (!GameManager.Instance.isGameOver) 
                         {
                             GameManager.Instance.OnMoleMissed();
                             activeMoles.Remove(newMole);
@@ -101,7 +101,7 @@ public class MoleTracker : MonoBehaviour
                 activeMoles.Remove(newMole);
                 Destroy(newMole);
 
-                if (!GameManager.Instance.isGameOver) // Vérifie que le jeu n'est pas terminé avant de respawner
+                if (!GameManager.Instance.isGameOver) 
                 {
                     SpawnMoleAtPoint(GetRandomSpawnPoint());
                 }

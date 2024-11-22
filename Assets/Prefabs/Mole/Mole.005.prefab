@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 7198129417780173226}
   - component: {fileID: 8845521122623060375}
   - component: {fileID: 1393014118068125633}
+  - component: {fileID: -4963475803600427862}
   m_Layer: 0
   m_Name: Mole.005
   m_TagString: Mole
@@ -622,6 +623,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-4963475803600427862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965831796092116366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9bd69c7ae9ff640bd957398479fefe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5976770484526749116
 GameObject:
   m_ObjectHideFlags: 0

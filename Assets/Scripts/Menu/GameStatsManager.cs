@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void OnMoleHit(int points)
     {
-        score += points * (combo + 1); // Multiplie les points par le combo
+        score += points * (combo + 1); 
         combo++;
         UpdateDifficulty();
         Debug.Log($"Score: {score}, Combo: {combo}");
@@ -56,10 +56,10 @@ public class GameManager : MonoBehaviour
 
     void UpdateDifficulty()
     {
-        float difficultyFactor = 1f + (score / 50f); // Augmente la vitesse tous les 50 points
+        float difficultyFactor = 1f + (score / 50f); 
         MoleTracker.Instance.UpdateSpeedMultiplier(difficultyFactor);
 
-        if (score % 100 == 0) // Augmente le nombre de taupes actives tous les 100 points
+        if (score % 100 == 0) 
         {
             MoleTracker.Instance.IncreaseMaxActiveMoles();
         }

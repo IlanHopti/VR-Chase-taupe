@@ -3,7 +3,7 @@ using UnityEngine;
 public class MoleHitDetection : MonoBehaviour
 {
     private bool isHit = false;
-    public System.Action OnHitCallback; // Callback pour notifier le hit
+    public System.Action OnHitCallback; 
 
     void OnTriggerEnter(Collider other)
     {

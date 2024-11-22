@@ -17,6 +17,7 @@ public class MoleHitDetection : MonoBehaviour
     void HandleHit()
     {
         GameManager.Instance.OnMoleHit(10); 
+        gameObject.GetComponent<AudioSource>().Play();
         OnHitCallback?.Invoke(); 
     }
 }
